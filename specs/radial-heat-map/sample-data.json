@@ -1,0 +1,132 @@
+[  
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2024-04-30",
+    "Value": "22"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2024-05-31",
+    "Value": "33"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2024-06-30",
+    "Value": "30"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2024-07-31",
+    "Value": "31"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2024-08-31",
+    "Value": "60"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2024-09-30",
+    "Value": "26"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2024-10-31",
+    "Value": "20"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2024-11-30",
+    "Value": "14"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2024-12-31",
+    "Value": "13"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2025-01-31",
+    "Value": "31"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2025-02-28",
+    "Value": "17"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2025-03-31",
+    "Value": "29"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2025-04-30",
+    "Value": "31"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2025-05-31",
+    "Value": "22"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2025-06-30",
+    "Value": "28"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2025-07-31",
+    "Value": "30"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2025-08-31",
+    "Value": "35"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2025-09-30",
+    "Value": "23"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2025-10-31",
+    "Value": "37"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2025-11-30",
+    "Value": "41"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2025-12-31",
+    "Value": "28"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2026-01-31",
+    "Value": "22"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2026-02-28",
+    "Value": "20"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2026-03-31",
+    "Value": "26"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2026-04-30",
+    "Value": "25"
+  },
+  {
+    "MeasureType": "Referrals",
+    "MonthEnd": "2026-05-31",
+    "Value": "19"
+  },
+]

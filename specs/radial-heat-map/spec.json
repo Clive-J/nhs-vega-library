@@ -1,0 +1,139 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Radial Sunburst to show month on month comparison for each financial year - Author: Clive Johnson.",
+  "data": {
+    "name": "dataset"
+  },
+  "transform": [
+    {
+      "calculate": "utcFormat(datum.MonthEnd,'%b')",
+      "as": "MonthName"
+    },
+    {
+      "calculate": "(month(datum.MonthEnd) + 1) >= 4 ? month(datum.MonthEnd) - 2 : month(datum.MonthEnd) + 10",
+      "as": "FiscalMonth"
+    },
+    {
+      "calculate": "(month(datum.MonthEnd) + 1) >= 4 ? year(datum.MonthEnd) : year(datum.MonthEnd) - 1",
+      "as": "Year"
+    },
+    {
+      "calculate": "(datum.Year % 100) + '/' + ((datum.Year + 1) % 100)",
+      "as": "FiscalYear"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "stroke": "rebeccapurple"
+        },
+      "encoding": {
+        "color": {
+          "field": "Value",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blues",
+            "reverse": false
+            },
+          "legend": true
+          },
+        "tooltip": [
+          {
+            "field": "FiscalYear",
+            "title": "Fiscal Year"
+          },
+          {
+            "field": "MonthName",
+            "title": "Month"
+          },
+          {
+            "field": "MeasureType",
+            "title": "Measure "
+          },
+          {
+            "field": "Value"
+          }
+          ]
+        }  
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "max",
+              "field": "FiscalMonth",
+              "as": "Month"
+            }
+            ],
+            "groupby": [
+              "FiscalYear"
+              ]
+          }
+        ],
+      "mark": {
+        "type": "text"
+        },
+      "encoding": {
+        "text": {
+          "field": "FiscalYear"
+          },
+        "theta": { "value": 0 }
+        }
+      },
+    {
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "max",
+              "field": "FiscalYear",
+              "as": "FiscalYear"
+            }    
+            ],
+          "groupby": ["FiscalMonth", "MonthName"]
+          }
+        ],
+      "mark": {
+        "type": "text",
+        "radiusOffset": 45,
+        "align": "center",
+        "baseline": "middle"
+        },
+      "encoding": {
+        "text": {
+          "field": "MonthName"
+          },
+        "theta": {
+          "field": "FiscalMonth",
+          "type": "ordinal",
+          "bandPosition": 0.5
+          },
+        "radius": {
+          "field": "FiscalYear",
+          "type": "ordinal"
+          }
+        }
+    }
+  ],
+  "encoding": {
+    "radius": {
+      "field": "FiscalYear",
+      "type": "ordinal",
+      "scale": {
+       "rangeMin": 60
+      }
+    },
+    "theta": {
+      "field": "FiscalMonth",
+      "type": "ordinal",
+      "scale": {
+        "rangeMin": 0.3,
+        "rangeMax": {
+          "expr": "2 * PI - 0.3"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "view": {
+    "stroke": "transparent"
+  },
+  "font":"arial, Segoe UI, sans-serif",
+  "arc": {},
+  "area": {},
+  "bar": {},
+  "line": {},
+  "point": {},
+  "rect": {},
+  "text": {
+    "font": "arial, Segoe UI, sans-serif",
+    "fontSize": 14,
+    "fill": "#425563"
+  },
+  "header": {
+    "titleFont": "arial, Segoe UI, sans-serif",
+    "titleFontSize": 16,
+    "titleColor": "#425563",
+    "labelFont": "arial, Segoe UI, sans-serif",
+    "labelFontSize": 14,
+    "labelColor": "#425563"
+  },
+  "legend": {
+    "titleFont": "arial, Segoe UI, sans-serif",
+    "titleFontSize": 14,
+    "titleFontWeight": "bold",
+    "titleColor": "#425563",
+    "labelFont": "arial, Segoe UI, sans-serif",
+    "labelFontSize": 12,
+    "labelColor": "#425563",
+    "orient": "bottom",
+    "direction": "horizontal",
+    "offset": 0
+  }
+}
