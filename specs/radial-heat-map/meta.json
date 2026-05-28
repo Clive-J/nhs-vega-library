@@ -1,0 +1,24 @@
+{
+  "title": "Radial Heat Map",
+  "category": "Comparison",
+  "description": "Alternative heat map to show values by Financial Year and Month.",
+  "language": "vega-lite",
+  "tags": ["heat-map"],
+  "inputs": [
+    {
+      "name": "MonthEnd",
+      "type": "date",
+      "description": "Month End Date to render the segments."
+    },
+    {
+      "name": "Value",
+      "type": "number",
+      "description": "Value of measure to shade segments. Supply as a whole number."
+    },
+    {
+      "name": "MeasureType",
+      "type": "string",
+      "description": "(Optional) used for Tooltip to indicate the measure type."
+    }
+  ]
+}
